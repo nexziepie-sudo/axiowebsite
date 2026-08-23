@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tournament Funds & Supporters | AXIO</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+header h1 a{
+    color:#fff;
+    text-decoration:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff3c3c;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.page-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:36px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.donation-box{
+    max-width:700px;
+    margin:0 auto 60px;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #2b2b2b;
+}
+
+.donation-box h3{
+    margin-bottom:15px;
+    font-size:26px;
+}
+
+.donation-box p{
+    margin-bottom:25px;
+    color:#ccc;
+    line-height:1.7;
+}
+
+/* ✅ QR Code Section */
+.qr-section{
+    margin:25px auto;
+    max-width:220px;
+}
+
+.qr-section img{
+    width:100%;
+    height:auto;
+    border-radius:8px;
+    background:#222;
+}
+
+.qr-note{
+    margin-top:10px;
+    font-size:14px;
+    color:#aaa;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#ff3c3c;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition: background 0.3s;
+}
+
+.btn:hover{
+    background:#ff6666;
+}
+
+.supporters-section{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.supporters-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:25px;
+}
+
+.supporter-card{
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:12px;
+    border-left:4px solid #ff3c3c;
+}
+
+.supporter-card h4{
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.supporter-card p{
+    font-size:15px;
+    color:#ccc;
+}
+
+.supporter-label{
+    display:inline-block;
+    font-size:12px;
+    padding:3px 10px;
+    border-radius:4px;
+    margin-bottom:10px;
+}
+
+.label-sponsor{
+    background:rgba(255,60,60,0.15);
+    color:#ff3c3c;
+}
+
+.label-donator{
+    background:rgba(255,255,255,0.1);
+    color:#ddd;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    transition: color 0.3s;
+}
+
+.social a:hover{
+    color:#ff3c3c;
+}
+
+@media(max-width:768px){
+    section{
+        padding:50px 5%;
+    }
+    .page-title{
+        font-size:28px;
+    }
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+    nav a{
+        margin:0 12px;
+    }
+    .donation-box{
+        padding:25px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1><a href="axiowebsite.html">AXIO</a></h1>
+<nav>
+<a href="tournamentwonawards.html">Tournaments Won & Awards</a>
+</nav>
+</header>
+
+<section id="funds">
+<h2 class="page-title">Tournament Funds & Supporters</h2>
+
+<div class="donation-box">
+    <h3>Support Tournament Expenses</h3>
+    <p>All contributions go toward registration fees, travel, gear, and logistics for shore casting and fishing tournaments.</p>
+
+    <!-- ✅ QR CODE PAYMENT -->
+    <div class="qr-section">
+        <img src="qr.jpg" alt="Payment QR Code">
+        <p class="qr-note">Scan to send support</p>
+    </div>
+</div>
+
+<div class="supporters-section">
+    <h3 style="text-align:center; margin-bottom:30px; font-size:28px;">Sponsors & Donators</h3>
+
+    <div class="supporters-grid">
+
+        <div class="supporter-card">
+            <span class="supporter-label label-sponsor">SPONSOR</span>
+            <h4>—</h4>
+            <p>Equipment / Gear / Cash Support</p>
+        </div>
+
+        <div class="supporter-card">
+            <span class="supporter-label label-sponsor">SPONSOR</span>
+            <h4>—</h4>
+            <p>Equipment / Gear / Cash Support</p>
+        </div>
+
+        <div class="supporter-card">
+            <span class="supporter-label label-donator">DONATOR</span>
+            <h4>—</h4>
+            <p>Voluntary contribution</p>
+        </div>
+
+        <div class="supporter-card">
+            <span class="supporter-label label-donator">DONATOR</span>
+            <h4>—</h4>
+            <p>Voluntary contribution</p>
+        </div>
+
+        <div class="supporter-card">
+            <span class="supporter-label label-donator">DONATOR</span>
+            <h4>—</h4>
+            <p>Voluntary contribution</p>
+        </div>
+
+        <div class="supporter-card">
+            <span class="supporter-label label-donator">DONATOR</span>
+            <h4>—</h4>
+            <p>Voluntary contribution</p>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<footer>
+<h3>Follow Me</h3>
+<br>
+<div class="social">
+<a href="https://www.youtube.com/@axiofishingadventures">YouTube</a>
+<a href="https://www.facebook.com/AXIO2026">Facebook</a>
+<a href="https://www.instagram.com/axiofishingadventures">Instagram</a>
+</div>
+<br>
+<p>© 2026 AXIO Fishing Adventures. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

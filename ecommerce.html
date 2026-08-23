@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merch Shop | AXIO Fishing Adventures</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:99;
+}
+
+header h1 a{
+    color:#fff;
+    text-decoration:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff3c3c;
+}
+
+/* Shop Cover Banner */
+.shop-banner{
+    width:100%;
+    height:280px;
+    background:url("merchcover.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.shop-banner::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.banner-text{
+    position:relative;
+    z-index:2;
+    text-align:center;
+}
+
+.banner-text h2{
+    font-size:42px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+
+.banner-text p{
+    font-size:17px;
+    color:#ddd;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* Merch Grid - 3 Items */
+.merch-grid{
+    max-width:900px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+}
+
+.merch-card{
+    background:#1b1b1b;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+    border-top:3px solid #ff3c3c;
+}
+
+.merch-card:hover{
+    transform:translateY(-6px);
+    background:#202020;
+}
+
+.merch-img{
+    width:100%;
+    height:260px;
+    background:#222;
+    overflow:hidden;
+}
+
+.merch-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.merch-card:hover .merch-img img{
+    transform:scale(1.05);
+}
+
+.merch-info{
+    padding:22px;
+    text-align:center;
+}
+
+.merch-name{
+    font-size:19px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.merch-desc{
+    font-size:14px;
+    color:#aaa;
+    margin-bottom:12px;
+    line-height:1.5;
+}
+
+.merch-price{
+    font-size:21px;
+    font-weight:bold;
+    color:#ff3c3c;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#ff3c3c;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition: background 0.3s;
+    font-size:15px;
+}
+
+.btn:hover{
+    background:#ff6666;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    transition: color 0.3s;
+}
+
+.social a:hover{
+    color:#ff3c3c;
+}
+
+@media(max-width:768px){
+    .shop-banner{
+        height:220px;
+    }
+    .banner-text h2{
+        font-size:30px;
+    }
+    section{
+        padding:50px 5%;
+    }
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+    nav a{
+        margin:0 12px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1><a href="axiowebsite.html">AXIO</a></h1>
+</header>
+
+<!-- Shop Cover Banner -->
+<div class="shop-banner">
+    <div class="banner-text">
+        <h2>Official Merchandise</h2>
+        <p>Represent AXIO Fishing Adventures</p>
+    </div>
+</div>
+
+<section>
+<h2 class="section-title">Available Items</h2>
+
+<div class="merch-grid">
+
+<!-- Item 1 -->
+<div class="merch-card">
+    <div class="merch-img">
+        <img src="cap.jpg" alt="AXIO T-Shirt">
+    </div>
+    <div class="merch-info">
+        <div class="merch-name">AXIO Cap</div>
+        <div class="merch-desc">Premium structured front with embroidered AXIO logo, Adjustable snapback fit for all head sizes, Water resistant & durable for outdoor use</div>
+        <div class="merch-price">₱ 499.00</div>
+        <a href="https://ph.shp.ee/uTzCPxh8" class="btn">Order Now</a>
+    </div>
+</div>
+
+<!-- Item 2 -->
+<div class="merch-card">
+    <div class="merch-img">
+        <img src="tshirt.jpg" alt="AXIO Cap">
+    </div>
+    <div class="merch-info">
+        <div class="merch-name">AXIO Tshirt</div>
+        <div class="merch-desc">100% premium soft cotton, comfortable fit, Bold front print with AXIO Fishing design, Lightweight & breathable under the sun, Preshrunk, minimal shrinkage after wash</div>
+        <div class="merch-price">₱ 499.00</div>
+        <a href="https://ph.shp.ee/uTzCPxh8" class="btn">Order Now</a>
+    </div>
+</div>
+
+<!-- Item 3 -->
+<div class="merch-card">
+    <div class="merch-img">
+        <img src="longsleve.jpg" alt="AXIO Stickers">
+    </div>
+    <div class="merch-info">
+        <div class="merch-name">AXIO Jersey</div>
+        <div class="merch-desc">UPF sun protection for long fishing trips, Soft, breathable fabric with full sleeves, Detailed AXIO branding on chest & sleeves, Comfortable for hot or cool weather</div>
+        <div class="merch-price">₱ 899.00</div>
+        <a href="https://ph.shp.ee/uTzCPxh8" class="btn">Order Now</a>
+    </div>
+</div>
+
+</section>
+
+<footer>
+<h3>Follow & Order</h3>
+<br>
+<div class="social">
+<a href="https://www.youtube.com/@axiofishingadventures">YouTube</a>
+<a href="https://www.facebook.com/AXIO2026">Facebook</a>
+<a href="https://www.instagram.com/axiofishingadventures">Instagram</a>
+</div>
+<br>
+<p>© 2026 AXIO Fishing Adventures. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

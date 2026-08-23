@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Supplies & Tackle | AXIO Fishing Adventures</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:99;
+}
+
+header h1 a{
+    color:#fff;
+    text-decoration:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff3c3c;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.page-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:36px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.supplies-grid{
+    max-width:1100px;
+    margin:0 auto 40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+}
+
+.supply-card{
+    background:#1b1b1b;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.supply-card:hover{
+    transform:translateY(-5px);
+    background:#202020;
+}
+
+.supply-available{
+    border-top:3px solid #28a745;
+}
+
+.supply-unavailable{
+    border-top:3px solid #dc3545;
+}
+
+.availability-tag{
+    display:inline-block;
+    font-size:13px;
+    font-weight:bold;
+    padding:4px 10px;
+    border-radius:4px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.tag-available{
+    background:rgba(40,167,69,0.15);
+    color:#28a745;
+}
+
+.tag-unavailable{
+    background:rgba(220,53,69,0.15);
+    color:#dc3545;
+}
+
+.supply-img{
+    width:100%;
+    height:200px;
+    background:#222;
+    overflow:hidden;
+}
+
+.supply-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.supply-card:hover .supply-img img{
+    transform:scale(1.05);
+}
+
+.supply-info{
+    padding:20px;
+}
+
+.supply-name{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:8px;
+    text-transform:uppercase;
+}
+
+.supply-desc{
+    font-size:14px;
+    color:#ccc;
+    line-height:1.6;
+}
+
+.distributor-note{
+    max-width:600px;
+    margin:0 auto;
+    text-align:center;
+    padding:15px 20px;
+    background:rgba(255,60,60,0.1);
+    border-radius:8px;
+    color:#ff3c3c;
+    font-weight:bold;
+    font-size:15px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    transition: color 0.3s;
+}
+
+.social a:hover{
+    color:#ff3c3c;
+}
+
+@media(max-width:768px){
+    section{
+        padding:50px 5%;
+    }
+    .page-title{
+        font-size:28px;
+    }
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+    nav a{
+        margin:0 12px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1><a href="axiowebsite.html">AXIO</a></h1>
+</header>
+
+<section>
+<h2 class="page-title">Team Supplies & Tackle</h2>
+
+<div class="supplies-grid">
+
+<!-- 1. Lures - OUT OF STOCK -->
+<div class="supply-card supply-unavailable">
+    <div class="supply-img">
+        <img src="lure.jpg" alt="Fishing Lures">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-unavailable">Out of Stock</span>
+        <div class="supply-name">Lures</div>
+        <div class="supply-desc">
+            Hard baits, soft plastics, jigs, and spoons. Sizes and styles for shore, reef, and open water — proven action and durable finish.
+        </div>
+    </div>
+</div>
+
+<!-- 2. Hooks - AVAILABLE -->
+<div class="supply-card supply-available">
+    <div class="supply-img">
+        <img src="hook.jpg" alt="Fishing Hooks">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-available">Available</span>
+        <div class="supply-name">Hooks</div>
+        <div class="supply-desc">
+            Octopus, circle, and live-bait styles. Sizes for small to large catches — corrosion-resistant, sharp, and strong.
+        </div>
+    </div>
+</div>
+
+<!-- 3. Sinker - OUT OF STOCK -->
+<div class="supply-card supply-unavailable">
+    <div class="supply-img">
+        <img src="sinker.jpg" alt="Sinkers">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-unavailable">Out of Stock</span>
+        <div class="supply-name">Sinker</div>
+        <div class="supply-desc">
+            Ball, pyramid, and bank weights from light to heavy. Casts steady, holds bottom in current and surf.
+        </div>
+    </div>
+</div>
+
+<!-- 4. Snap - OUT OF STOCK -->
+<div class="supply-card supply-unavailable">
+    <div class="supply-img">
+        <img src="snap.jpg" alt="Snap / Swivel">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-unavailable">Out of Stock</span>
+        <div class="supply-name">Snap</div>
+        <div class="supply-desc">
+            Quick-lock and interlock snaps — fast lure changes without retying. High-tensile strength, rust-proof, various sizes.
+        </div>
+    </div>
+</div>
+
+<!-- 5. Leader Line - AVAILABLE -->
+<div class="supply-card supply-available">
+    <div class="supply-img">
+        <img src="leaderline.jpg" alt="Leader Line">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-available">Available</span>
+        <div class="supply-name">Leader Line</div>
+        <div class="supply-desc">
+            Fluorocarbon and mono options — low visibility, high abrasion resistance, strong knot strength. Various lb-test available.
+        </div>
+    </div>
+</div>
+
+<!-- 6. Braided Line - OUT OF STOCK -->
+<div class="supply-card supply-unavailable">
+    <div class="supply-img">
+        <img src="braidedline.jpg" alt="Braided Line">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-unavailable">Out of Stock</span>
+        <div class="supply-name">Braided Line</div>
+        <div class="supply-desc">
+            High strength, thin diameter, zero stretch — excellent sensitivity and long casts. Multiple colors and lb-test.
+        </div>
+    </div>
+</div>
+
+<!-- 7. First Aid Kit - AVAILABLE -->
+<div class="supply-card supply-available">
+    <div class="supply-img">
+        <img src="firstaid.jpg" alt="First Aid Kit">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-available">Available</span>
+        <div class="supply-name">First Aid Kit</div>
+        <div class="supply-desc">
+            Waterproof pack — bandages, antiseptic, pain relief, wound care, and essentials for minor injuries on trips.
+        </div>
+    </div>
+</div>
+
+<!-- 8. Night Light - AVAILABLE -->
+<div class="supply-card supply-available">
+    <div class="supply-img">
+        <img src="nightlight.jpg" alt="Night Light">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-available">Available</span>
+        <div class="supply-name">Night Light</div>
+        <div class="supply-desc">
+            Waterproof LED headlamp or lantern — bright, adjustable, long battery life for night fishing.
+        </div>
+    </div>
+</div>
+
+<!-- 9. Communication Radio - OUT OF STOCK -->
+<div class="supply-card supply-unavailable">
+    <div class="supply-img">
+        <img src="radio.jpg" alt="Communication Radio">
+    </div>
+    <div class="supply-info">
+        <span class="availability-tag tag-unavailable">Out of Stock</span>
+        <div class="supply-name">Communication Radio</div>
+        <div class="supply-desc">
+            Long-range, waterproof two-way radio — clear audio, hands-free, reliable contact for team safety.
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="distributor-note">
+    If supply is available please go to supply distributor
+</div>
+
+</section>
+
+<footer>
+<h3>Follow Me</h3>
+<br>
+<div class="social">
+<a href="https://www.youtube.com/@axiofishingadventures">YouTube</a>
+<a href="https://www.facebook.com/AXIO2026">Facebook</a>
+<a href="https://www.instagram.com/axiofishingadventures">Instagram</a>
+</div>
+<br>
+<p>© 2026 AXIO Fishing Adventures. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

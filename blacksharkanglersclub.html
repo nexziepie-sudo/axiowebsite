@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anglers Club | AXIO</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:99;
+}
+
+header h1 a{
+    color:#fff;
+    text-decoration:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff3c3c;
+}
+
+/* ✅ COVER BANNER WITH PNG BACKGROUND IMAGE */
+.cover-banner{
+    width:100%;
+    height:320px;
+    /* Replace "club-cover.png" with YOUR ACTUAL PNG FILENAME */
+    background:url("bsac.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.cover-banner::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
+
+.cover-text{
+    position:relative;
+    z-index:2;
+    text-align:center;
+}
+
+.cover-text h2{
+    font-size:42px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+
+.cover-text p{
+    font-size:17px;
+    color:#ddd;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.intro-text{
+    max-width:800px;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#ccc;
+    line-height:1.7;
+}
+
+.members-grid{
+    max-width:1000px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
+}
+
+.member-card{
+    background:#1b1b1b;
+    padding:25px 20px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+    border-top:3px solid #ff3c3c;
+}
+
+.member-card:hover{
+    transform:translateY(-5px);
+    background:#202020;
+}
+
+.member-avatar{
+    width:90px;
+    height:90px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#222;
+    overflow:hidden;
+}
+
+.member-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.member-name{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.member-role{
+    font-size:14px;
+    color:#ff3c3c;
+    margin-bottom:8px;
+}
+
+.member-details{
+    font-size:13px;
+    color:#aaa;
+    line-height:1.5;
+}
+
+.join-section{
+    max-width:600px;
+    margin:60px auto 0;
+    background:#1b1b1b;
+    padding:35px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.join-section h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.join-section p{
+    margin-bottom:25px;
+    color:#ccc;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#ff3c3c;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition: background 0.3s;
+}
+
+.btn:hover{
+    background:#ff6666;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    transition: color 0.3s;
+}
+
+.social a:hover{
+    color:#ff3c3c;
+}
+
+@media(max-width:768px){
+    .cover-banner{
+        height:240px;
+    }
+    .cover-text h2{
+        font-size:30px;
+    }
+    section{
+        padding:50px 5%;
+    }
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+    nav a{
+        margin:0 12px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1><a href="axiowebsite.html">AXIO</a></h1>
+<nav>
+<a href="teamshop.html">Team Shop</a>
+<a href="supply.html">Supply</a>
+</nav>
+</nav>
+</header>
+
+<!-- Cover Banner with PNG Background -->
+<div class="cover-banner">
+    <div class="cover-text">
+        <h2>BlackShark Anglers Club</h2>
+        <p>CAST · REEL · CONQUER</p>
+    </div>
+</div>
+
+<section>
+<p class="intro-text">
+A community of dedicated anglers sharing knowledge, experiences, and passion for fishing. We support one another, explore new waters, and promote responsible fishing practices across the region.
+</p>
+
+<div class="members-grid">
+
+<!-- Member 1 - Founder -->
+<div class="member-card">
+    <div class="member-avatar">
+        <img src="founder.jpg" alt="Member">
+    </div>
+    <div class="member-name">Thaniel</div>
+    <div class="member-role">President/Club Director (Management)</div>
+    <div class="member-details">Location: Bacolod<br>Baitcaster specialist</div>
+</div>
+
+<!-- Member 2 -->
+<div class="member-card">
+    <div class="member-avatar">
+        <img src="member-2.png" alt="Member">
+    </div>
+    <div class="member-name">—</div>
+    <div class="member-role">Operations & Training Officer</div>
+    <div class="member-details">Location: —<br>Specialty: —</div>
+</div>
+
+<!-- Member 3 -->
+<div class="member-card">
+    <div class="member-avatar">
+        <img src="member-3.png" alt="Member">
+    </div>
+    <div class="member-name">—</div>
+    <div class="member-role">Finance</div>
+    <div class="member-details">Location: —<br>Specialty: —</div>
+</div>
+
+<!-- Member 4 -->
+<div class="member-card">
+    <div class="member-avatar">
+        <img src="member-4.png" alt="Member">
+    </div>
+    <div class="member-name">—</div>
+    <div class="member-role">Supply Distributor</div>
+    <div class="member-details">Location: —<br>Specialty: —</div>
+</div>
+
+<!-- Member 5 -->
+<div class="member-card">
+    <div class="member-avatar">
+        <img src="member-5.png" alt="Member">
+    </div>
+    <div class="member-name">—</div>
+    <div class="member-role">Member</div>
+    <div class="member-details">Location: —<br>Specialty: —</div>
+</div>
+
+<!-- Member 6 -->
+<div class="member-card">
+    <div class="member-avatar">
+        <img src="member-6.png" alt="Member">
+    </div>
+    <div class="member-name">—</div>
+    <div class="member-role">Member</div>
+    <div class="member-details">Location: —<br>Specialty: —</div>
+</div>
+
+</div>
+
+<div class="join-section">
+    <h3>Join The Club</h3>
+    <p>Connect with fellow anglers, get updates on events, and share your own fishing journeys.</p>
+    <a href="https://www.messenger.com/j/Aba1awqcuDhRAbLe/?send_source=gc%3Acopy_invite_link_c" class="btn">Join Group Chat</a>
+</div>
+
+</section>
+
+<footer>
+<h3>Follow Me</h3>
+<br>
+<div class="social">
+<a href="https://www.youtube.com/@axiofishingadventures">YouTube</a>
+<a href="https://www.facebook.com/AXIO2026">Facebook</a>
+<a href="https://www.instagram.com/axiofishingadventures">Instagram</a>
+</div>
+<br>
+<p>© 2026 AXIO Fishing Adventures. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
